@@ -67,7 +67,7 @@ header{
 }
 
 .nextBtnPhone{
-  background-color: fuchsia;
+  background: linear-gradient(to bottom right, purple, fuchsia);
   color: white;
   width: 80%;
   height: 8%;
@@ -118,7 +118,7 @@ header{
 }
 
 .nextBtnVerify{
-  background-color: fuchsia;
+  background: linear-gradient(to bottom right, purple, fuchsia);
   color: white;
   width: 80%;
   height: 8%;
@@ -160,7 +160,7 @@ header{
 }
 
 .finish{
-  background-color: fuchsia;
+  background: linear-gradient(to bottom right, purple, fuchsia);
   color: white;
   width: 80%;
   height: 8%;

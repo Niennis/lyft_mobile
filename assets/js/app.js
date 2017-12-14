@@ -74,7 +74,7 @@ $(document).ready(function(){
     var digit02 = $('.digit02').val();
     var digit03 = $('.digit03').val();
     
-    if( digit01.length >= 1 && digit02 >= 1 && digit03 >= 1){
+    if( digit01.length > 0 && digit02.length > 0 && digit03.length > 0){
       $('.nextBtnVerify').attr('disabled', false);
       $('.nextBtnVerify').click(function(){
         $('#verify').hide();
@@ -89,9 +89,8 @@ $(document).ready(function(){
     var name = $('.nameUser').val();
     var lastName = $('.lastNameUser').val();
     var mail = $('.email').val();
-  //  var check = $('.check').attr('checked');
 
-    if(name.length >= 3 && lastName.length >=3 && mail.length >= 6 && check === checked){
+    if(name.length >= 3 && lastName.length >= 3 && mail.length >= 6){
       $('.finish').attr('disabled', false);
     }else{
       $('.finish').attr('disabled', true);    
