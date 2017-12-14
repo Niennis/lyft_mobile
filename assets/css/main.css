@@ -1,0 +1,183 @@
+body{
+  width: 100%;
+  text-align: center;
+}
+
+header{
+	background: linear-gradient(to bottom right, purple, fuchsia);
+	height: 100%;
+}
+/*----LOGIN/ SIGNUP*/
+#log{
+  background-image: url(../../assets/img/car2.jpg);
+  height: 100%;
+  width: auto;
+  background-repeat: no-repeat;
+  background-color: black;
+  overflow: hidden;
+}
+
+.whiteLogo, .title, .lyftLyfe{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.whiteLogo{
+  width: 50%;
+  margin-top: 50%;
+}
+
+.title{
+  width: 40%;
+  margin-top: 10%;
+}
+
+.lyftLyfe{
+  width: 95%;
+  margin-top: 10%;
+}
+
+.logInBtn, .signUpBtn{
+  background-color: rgba(19, 31, 31, 0.678);
+  color: white;
+  border: 0.2em solid white;
+  margin-top: 50%;
+}
+
+.logInBtn{
+  float: right;
+}
+
+/*-------SIGNUP-----------*/
+
+#signUp{
+  background-color: white;
+  height: 100%;
+  text-align: center;
+}
+
+.fa-chevron-left{
+  margin-top: 55%;
+  color: fuchsia;
+  border: 1px solid fuchsia;
+  padding: 0.1em 0.3em;
+  border-radius: 5em;
+  float: right;
+}
+
+.nextBtnPhone{
+  background-color: fuchsia;
+  color: white;
+  width: 80%;
+  height: 8%;
+  margin-top: 70%;
+  padding-top: 3%;
+  font-size: 1.2em;
+}
+
+.nextBtnPhone[disabled]{
+  color: black;
+}
+
+#signUp h5{
+  margin-top: 10%;
+}
+/*------------------flags--------------------*/
+#demo{
+  height: 7%;
+  width: 110%;
+  border-radius: 0.5em;
+}
+/*------------------CODE---------------------*/
+#codeGenerator{
+  background-color: white;
+  height: 100%;
+}
+
+.jumbotron{
+  margin-top: 20%;
+}
+
+.ok{
+  background-color: fuchsia;
+  color: white;
+}
+/*------------------VERIFY--------------------*/
+#verify{
+  height: 100%;
+}
+
+.enterCode, .digit01, .digit02, .digit03{
+  border: none;
+  border-bottom: 0.3em solid fuchsia;
+}
+
+.reSend{
+  margin: 0.5em;
+}
+
+.nextBtnVerify{
+  background-color: fuchsia;
+  color: white;
+  width: 80%;
+  height: 8%;
+  margin-top: 70%;
+  padding-top: 3%;
+  font-size: 1.2em;
+}
+
+.nextBtnVerify[disabled]{
+  color: black;
+}
+
+/* ----USERDATA------*/
+#userData{
+  height: 100%;
+}
+
+.nameUser, .lastNameUser{
+  width: 50%;
+  display: inline-block;
+}
+
+.nameUser{
+  border-radius: 4px 0 0 4px;
+  border-right: none;
+  margin-right: -2px;
+  padding-right: 0;
+}
+
+.lastNameUser{
+  border-radius: 0 4px 4px 0;
+  border-left: none;
+  margin-left: -2px;
+  padding-left: 0;
+}
+
+.lastNameUser::placeholder{
+  padding-left: 5%;
+}
+
+.finish{
+  background-color: fuchsia;
+  color: white;
+  width: 80%;
+  height: 8%;
+  margin-top: 70%;
+  padding-top: 3%;
+  font-size: 1.2em;
+}
+
+.finish[disabled]{
+  color: black;
+}
+
+/*-------DONE-------*/
+
+#done{
+  height: 100%;
+  background: linear-gradient(to bottom right, purple, fuchsia);
+  color: white; 
+  font-size: 2em;
+}

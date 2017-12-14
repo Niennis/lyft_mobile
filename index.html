@@ -1,0 +1,201 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="assets/img/lyft-favicon.png" type="image/x-icon">  
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/css/intlTelInput.css">
+  <link rel="stylesheet" href="assets/css/fontawesome-all.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <img class="img-responsive whiteLogo" src="assets/img/logo-white.png" alt="">        
+        </div>
+      </div>
+    </div>
+  </header>
+<!--_____INICIO_____-->  
+  <section id="log">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <img class="img-responsive title" src="assets/img/logo-white.png" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <img class="img-responsive lyftLyfe" src="assets/img/lyftlyfe.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6">
+        <button class="btn btn-default logInBtn" type="submit">LOG IN</button>    
+      </div>
+      <div class="col-xs-6">
+        <a class="btn btn-default signUpBtn"  role="button" type="submit">SIGN UP</a >    
+      </div>
+    </div>
+  </section>
+<!--_____SIGNUP_____-->
+  <section id="signUp">
+    <div class="row">
+      <div class="col-xs-2">
+        <a href="#lg"><i class="fa fa-chevron-left backToStart"></i></a>
+      </div>
+      <div class="col-xs-7">
+        <h3>Sign up</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <h5>Join now for free ride credit</h5>     
+        <hr>     
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <!--_____flags_____-->        
+        <input type="number" id="demo" placeholder=""> 
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <h5>We'll send a text to verify your phone.</h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <a class="btn btn-default nextBtnPhone" disabled="true" type="submit"> NEXT</a>
+      </div>
+    </div>
+  </section>
+<!--_____CODE_____-->  
+  <section id="codeGenerator">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="jumbotron">
+            <h3 class="code"></h3>
+            <a class="btn btn-default ok" role="button">OK</a>          
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!--_____VERIFY_____-->  
+  <section id="verify">
+    <div class="container">            
+      <div class="row">
+        <div class="col-xs-2">
+          <a><i class="fa fa-chevron-left backToSignUp"></i></a>                    
+        </div>
+        <div class="col-xs-8">
+          <h3>Verify phone number</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <h5>Join now for free ride credit</h5>
+          <hr>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <span>LAB - </span>    
+          <input type="text" class="digit01" maxlength="1" size="1">
+          <input type="text" class="digit02" maxlength="1" size="1">
+          <input type="text" class="digit03" maxlength="1" size="1">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <h5>Enter the code sent to +56</h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <a class="reSend btn btn-default" disabled="false" type="button">Resend code</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <a class="btn btn-default nextBtnVerify" disabled="true" type="submit"> NEXT</a>
+        </div>
+      </div>
+    </div>
+  </section>
+<!--_____USER DATA_____-->  
+  <section id="userData">  
+    <div class="container">             
+      <div class="row">
+        <div class="col-xs-2">
+          <a><i class="fa fa-chevron-left backToVerify"></i></a>                
+        </div>
+        <div class="col-xs-8">
+          <h3>Sign up</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <h4>Join now for free ride credit</h4>
+          <hr>
+        </div>
+      </div>
+      <div class="row">        
+        <div class="col-xs-12">      
+          <form>
+            <div class="form-group">
+              <span>
+                <input type="text" class="form-control nameUser" placeholder="Name">
+                <input type="text" class="form-control lastNameUser" placeholder="Last name">
+              </span>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control email" id="" placeholder="Email">
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> I agree to Lyft's <a href="">Terms of service.</a>
+              </label>
+            </div>
+            <a class="btn btn-default finish" disabled="true" type="button">Next</a>
+          </form>          
+        </div>        
+      </div>
+    </div>
+  </section>
+<!--_____DONE_____-->  
+  <section id="done">
+    <div class="row">
+      <div class="col-xs-12">
+        <img src="assets/img/logo-white.png" class="whiteLogo" alt="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <i class="fa fa-check fa-4x"></i>
+      </div>
+    </div>
+  </section>
+
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/intlTelInput.min.js"></script>
+  <script src="assets/js/app.js"></script>
+
+</body>
+</html>
+
+
