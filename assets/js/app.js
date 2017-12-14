@@ -1,16 +1,19 @@
 $(document).ready(function(){
   /* ----------------- SPLSAH ----------------- */
   $('header').fadeOut(2000);
+  /* --------------ESTADO INICIAL-------------- */
+  $('#log').show();
+  $('#signUp, #codeGenerator, #verify, #userData, #done').hide();
   /* ----------------- FLAGS ------------------ */
   $('#demo').intlTelInput()
   /* -------------- NAVIGATION ---------------- */
   $('.signUpBtn').click(function(){
-    $('#log').hide();
+    $('#log, #codeGenerator, #verify, #userData, #done').hide();
     $('#signUp').show();
   })
   
   $('.backToStart').click(function(){
-    $('#signUp').hide();
+    $('#signUp, #codeGenerator, #verify, #userData, #done').hide();
     $('#log').show();
   })
 /* Función de boton next puesta dentro de la funcion de validacion de input
@@ -20,7 +23,7 @@ $(document).ready(function(){
   })*/
 
   $('.ok').click(function(){
-    $('#codeGenerator').hide();
+    $('#codeGenerator, #signUp, #log, #userData, #done').hide();
     $('#verify').show();
   })
   /* Función de boton next puesta dentro de la funcion de validacion de input
@@ -30,7 +33,7 @@ $(document).ready(function(){
   })
 */
   $('.backToSignUp').click(function(){
-    $('#verify').hide();
+    $('#verify, #log, #codegenerator, #userData, #done').hide();
     $('#signUp').show();
   })
   /* Función de boton next puesta dentro de la funcion de validacion de input
@@ -40,7 +43,7 @@ $(document).ready(function(){
   })
   */
   $('.backToVerify').click(function(){
-    $('#userData').hide();
+    $('#userData, #log, #codeGenerator, #signUp, #done').hide();
     $('#verify').show();
   })  
   /* ------------- END NAVIGATION ------------- */
@@ -51,7 +54,7 @@ $(document).ready(function(){
       $('.nextBtnPhone').attr('disabled', false);
       /* funcion btn next y resend */
       $('.nextBtnPhone, .reSend').click(function(){
-        $('#signUp').hide();
+        $('#signUp, #log, #signUp, #verify, #done').hide();
         $('#codeGenerator').show();
       });         
     }else{
@@ -77,7 +80,7 @@ $(document).ready(function(){
     if( digit01.length > 0 && digit02.length > 0 && digit03.length > 0){
       $('.nextBtnVerify').attr('disabled', false);
       $('.nextBtnVerify').click(function(){
-        $('#verify').hide();
+        $('#verify, #log, #signUp, #codeGenerator, #done').hide();
         $('#userData').show();
       })
     }else{
@@ -93,7 +96,7 @@ $(document).ready(function(){
     if(name.length >= 3 && lastName.length >= 3 && mail.length >= 6){
       $('.finish').attr('disabled', false);
       $('.finish').click(function(){
-        $('#userData').hide();
+        $('#userData, #log, #signUp, #codeGenerator, #verify').hide();
         $('#done').show();
       })
     }else{
