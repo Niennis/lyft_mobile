@@ -33,12 +33,12 @@ $(document).ready(function(){
     $('#verify').hide();
     $('#signUp').show();
   })
-  
+  /* Función de boton next puesta dentro de la funcion de validacion de input
   $('.finish').click(function(){
     $('#userData').hide();
     $('#done').show();
   })
-  
+  */
   $('.backToVerify').click(function(){
     $('#userData').hide();
     $('#verify').show();
@@ -92,6 +92,10 @@ $(document).ready(function(){
 
     if(name.length >= 3 && lastName.length >= 3 && mail.length >= 6){
       $('.finish').attr('disabled', false);
+      $('.finish').click(function(){
+        $('#userData').hide();
+        $('#done').show();
+      })
     }else{
       $('.finish').attr('disabled', true);    
     }

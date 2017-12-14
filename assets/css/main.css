@@ -172,9 +172,7 @@ header{
 .finish[disabled]{
   color: black;
 }
-
 /*-------DONE-------*/
-
 #done{
   height: 100%;
   background: linear-gradient(to bottom right, purple, fuchsia);
