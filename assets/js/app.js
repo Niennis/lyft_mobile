@@ -1,6 +1,6 @@
 $(document).ready(function(){
   /* ----------------- SPLSAH ----------------- */
-  $('header').fadeOut(200);
+  $('header').fadeOut(2000);
   /* ----------------- FLAGS ------------------ */
   $('#demo').intlTelInput()
   /* -------------- NAVIGATION ---------------- */
@@ -13,22 +13,22 @@ $(document).ready(function(){
     $('#signUp').hide();
     $('#log').show();
   })
-
+/* Función de boton next puesta dentro de la funcion de validacion de input
   $('.nextBtnPhone, .reSend').click(function(){
     $('#signUp').hide();
     $('#codeGenerator').show();
-  })
+  })*/
 
   $('.ok').click(function(){
     $('#codeGenerator').hide();
     $('#verify').show();
   })
-  
+  /* Función de boton next puesta dentro de la funcion de validacion de input
   $('.nextBtnVerify').click(function(){
     $('#verify').hide();
     $('#userData').show();
   })
-
+*/
   $('.backToSignUp').click(function(){
     $('#verify').hide();
     $('#signUp').show();
@@ -49,6 +49,11 @@ $(document).ready(function(){
     var demo = $('#demo').val();
     if(demo.length >= 10){
       $('.nextBtnPhone').attr('disabled', false);
+      /* funcion btn next y resend */
+      $('.nextBtnPhone, .reSend').click(function(){
+        $('#signUp').hide();
+        $('#codeGenerator').show();
+      });         
     }else{
       $('.nextBtnPhone').attr('disabled', true);    
     }
@@ -71,6 +76,10 @@ $(document).ready(function(){
     
     if( digit01.length >= 1 && digit02 >= 1 && digit03 >= 1){
       $('.nextBtnVerify').attr('disabled', false);
+      $('.nextBtnVerify').click(function(){
+        $('#verify').hide();
+        $('#userData').show();
+      })
     }else{
       $('.nextBtnVerify').attr('disabled', true);    
     }
@@ -80,8 +89,9 @@ $(document).ready(function(){
     var name = $('.nameUser').val();
     var lastName = $('.lastNameUser').val();
     var mail = $('.email').val();
+  //  var check = $('.check').attr('checked');
 
-    if(name.length >= 3 && lastName.length >=3 && mail.length >= 6){
+    if(name.length >= 3 && lastName.length >=3 && mail.length >= 6 && check === checked){
       $('.finish').attr('disabled', false);
     }else{
       $('.finish').attr('disabled', true);    
